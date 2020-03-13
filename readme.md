@@ -36,3 +36,24 @@ retourne:
   "Béatrice: NON"
 ]
 ```
+
+### `npm run file:save`
+
+Télécharger un fichier de tous les "repos".
+
+example:
+
+```
+npm run file:save file=exercices/exercice1.md dir=exercice1
+```npm run file:exists
+
+* `file=...` est le fichier à télécharger
+* `dir=...` est le dossier dans lequel les fichiers vont être sauvés
+
+Cette commande va créer un fichier avec la même extension que `file` dans `dir` pour chaque élève qui a fait l'exercice.
+
+Si nous prenons les élèves ficitifs de l'example pour `npm run file:exists`, nous avons un seul fichier dans `dir`, celui d'Aline.
+
+```
+exercice1/aline.md
+```

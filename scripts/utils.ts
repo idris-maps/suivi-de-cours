@@ -1,8 +1,9 @@
 import { exec } from 'child_process'
 import { readFile, writeFile, readdir } from 'fs'
 
-export const cmd = (cmd: string) =>
-  new Promise((resolve, reject) =>
+export const cmd = (cmd: string, debug: boolean = false) => {
+  if (debug) { console.log(cmd) }
+  return new Promise((resolve, reject) =>
     exec(cmd, (error, stdout, stderr) => {
       if (error) { return reject(error) }
       if (stdout) { console.log(stdout) }
@@ -10,7 +11,7 @@ export const cmd = (cmd: string) =>
       return resolve()
     })
   )
-
+}
 export const openFile = async (path: string): Promise<string> =>
   new Promise((resolve, reject) =>
     readFile(path, 'utf-8', (err, file) => err ? reject(err) : resolve(file))
@@ -41,3 +42,9 @@ export const parseArgs = (argv: string[]): ParsedArgs =>
     .map(arg => arg.split('='))
     .filter(([before, after]) => before && before !== '' && after && after !== '')
     .reduce((res, [key, value]) => ({ ...res, [key]: value }), {})
+
+export const reservedDirs = [
+  'node_modules',
+  'repos',
+  'scripts',
+]
