@@ -17,3 +17,22 @@ Ce script clone tous les "repos" dans `repos_eleves.json`.
 
 Mettre à jour tous les "repos" s'ils ont été modifiés.
 
+### `npm run file:exists`
+
+Voir qui a créé un fichier.
+
+example:
+
+```
+npm run file:exists file=exercices/exercice1.md
+```
+
+retourne:
+
+```json
+[
+  "Alain: NON",
+  "Aline: OUI",
+  "Béatrice: NON"
+]
+```

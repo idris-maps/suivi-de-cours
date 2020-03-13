@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "repos:init": "ts-node scripts/initRepos",
-    "repos:pull": "ts-node scripts/pullRepos"
+    "repos:pull": "ts-node scripts/pullRepos",
+    "file:exists": "ts-node scripts/checkFileExists"
   },
   "keywords": [],
   "author": "",

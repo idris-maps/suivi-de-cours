@@ -1,5 +1,5 @@
 import { exec } from 'child_process'
-import { readFile, writeFile } from 'fs'
+import { readFile, writeFile, readdir } from 'fs'
 
 export const cmd = (cmd: string) =>
   new Promise((resolve, reject) =>
@@ -26,3 +26,18 @@ export const openJsonFile = async (path: string) =>
 
 export const saveJsonFile = async (path: string, file: string) =>
   saveFile(path, JSON.stringify(file))
+
+export const ls = async (path: string): Promise<string[]> =>
+  new Promise((resolve, reject) =>
+    readdir(path, (err, files) => err ? reject(err) : resolve(files))
+  )
+
+interface ParsedArgs {
+  [key: string]: string
+}
+
+export const parseArgs = (argv: string[]): ParsedArgs =>
+  argv
+    .map(arg => arg.split('='))
+    .filter(([before, after]) => before && before !== '' && after && after !== '')
+    .reduce((res, [key, value]) => ({ ...res, [key]: value }), {})
