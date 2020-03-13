@@ -2,8 +2,8 @@
 
 ## Préparation
 
-* Demander aux éléves de créer un "repo" de cours
-* Ajouter les "repos" et noms des éléves dans `repos_eleves.json`
+* Demander aux éléves de créer un "repo" de cours chacun
+* Ajouter les "repos" et noms des éléves dans `repos_eleves.json` [example](https://github.com/idris-maps/suivi-de-cours/blob/master/repos_eleves.json)
 
 ## Scripts
 
@@ -45,7 +45,7 @@ example:
 
 ```
 npm run file:save file=exercices/exercice1.md dir=exercice1
-```npm run file:exists
+```
 
 * `file=...` est le fichier à télécharger
 * `dir=...` est le dossier dans lequel les fichiers vont être sauvés
