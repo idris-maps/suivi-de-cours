@@ -57,3 +57,5 @@ Si nous prenons les élèves ficitifs de l'example pour `npm run file:exists`, n
 ```
 exercice1/aline.md
 ```
+
+**ATTENTION** utilisez `npm run repos:pull` pour avoir les dernières versions des "repos" élèves avant d'utiliser cette commande.
