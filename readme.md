@@ -2,6 +2,14 @@
 
 ## Préparation
 
+* Cloner ce "repo" et installer les dépendances
+
+```
+git clone git@github.com:idris-maps/suivi-de-cours.git
+cd suivi-de-cours
+npm install
+```
+
 * Demander aux éléves de créer un "repo" de cours chacun
 * Ajouter les "repos" et noms des éléves dans `repos_eleves.json` [example](https://github.com/idris-maps/suivi-de-cours/blob/master/repos_eleves.json)
 
