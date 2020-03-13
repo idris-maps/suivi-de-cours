@@ -13,3 +13,7 @@ Ce script clone tous les "repos" dans `repos_eleves.json`.
 
 **ATTENTION** ce script prends un peu de temps. À n'utilisez qu'une seule fois pour initializer le cours une fois que vous avez tous les éléves dans `repos_eleves.json`.
 
+### `npm run repos:pull`
+
+Mettre à jour tous les "repos" s'ils ont été modifiés.
+
