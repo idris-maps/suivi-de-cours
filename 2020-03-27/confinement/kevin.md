@@ -1,0 +1,1 @@
+Il montre l'évolution de la population d'un point de vue de l'age et du revenu. On voit qu'au fil du temps, la popoulation devient de plus en plus vieille et que l'écart entre les différent pays d'un point de vue revenu devient de plus en plus important.

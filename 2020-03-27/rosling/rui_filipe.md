@@ -1,0 +1,3 @@
+**Quel est le message que Hans Rosling veut faire passer en montrant ce graphique?**
+
+Que plus le revenu est élevé plus l'Esperance de vie est grande. Il utilise les pays comme exemple on voit évolution depuis 1810 à 2009 on peux voir aussi l'évolution des divers pays qui s'est faite lentement mais pas la chine qui à grimper très vite par contre il remontre que il a  beaucoup inégalités dans se pays aussi car Shangaï est au niveau des USA et Guizhou au niveau du Pakistan .
